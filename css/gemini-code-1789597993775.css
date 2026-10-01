@@ -1,0 +1,305 @@
+/* =========================================
+   VARIABLES GLOBALES (Custom Properties)
+   ========================================= */
+:root {
+    /* Colores */
+    --color-primary: #0a33ed;      /* Azul fuerte */
+    --color-secondary: #0db7f7;    /* Celeste brillante */
+    --color-tertiary: cornflowerblue;
+    --color-accent: aqua;
+    --color-bg-section: #eaeded;   /* Gris muy claro */
+    --color-text-main: gray;
+    --color-light: #ffffff;
+    --color-border: #ccc;
+    --color-hover-btn: #0db9f779;  /* Celeste transparente */
+    
+    /* Tipografías */
+    --font-primary: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --font-secondary: Georgia, 'Times New Roman', Times, serif;
+    
+    /* Espaciados (Paddings y Margins) */
+    --spacing-xs: 8px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    --spacing-xl: 25px;
+    
+    /* Bordes y Sombras */
+    --border-radius-md: 10px;
+    --shadow-img: 15px 15px 20px var(--color-text-main);
+}
+
+/* =========================================
+   RESETEO UNIVERSAL
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   ESTILOS GENERALES
+   ========================================= */
+body {
+    font-family: var(--font-primary);
+    background-image: url(../assets/fondo/round.png);
+}
+
+/* =========================================
+   ENCABEZADO (HEADER)
+   ========================================= */
+header {
+    background-color: var(--color-tertiary);
+    color: var(--color-accent);
+    text-align: center;
+}
+
+header a {
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+.titulosuperior {
+    background-color: var(--color-primary);
+    padding: var(--spacing-sm);
+    letter-spacing: 5px;
+}
+
+.titulocentro {
+    color: var(--color-light);
+    font-family: var(--font-secondary);
+    font-size: 40px;
+    margin: 26px;
+    word-spacing: 8px;
+    letter-spacing: 5px;
+}
+
+.tituloinferior {
+    font-size: 20px;
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    text-align: right;
+    padding: var(--spacing-sm);
+}
+
+.icons {
+    position: relative;
+    top: 5px;
+}
+
+/* =========================================
+   ESTRUCTURA PRINCIPAL (SECCIONES Y ARTÍCULOS)
+   ========================================= */
+section {
+    width: 80%;
+    background-color: var(--color-bg-section);
+    color: var(--color-text-main);
+    text-align: justify;
+    padding-bottom: var(--spacing-lg);
+    margin: var(--spacing-xl) auto;
+}
+
+section h2 {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    padding: var(--spacing-sm);
+}
+
+section ul {
+    margin-left: 70px;
+}
+
+section p {
+    padding: 0 var(--spacing-lg);
+    margin: 16px 0;
+}
+
+article {
+    margin: var(--spacing-lg) auto;
+    text-align: center;
+}
+
+article img {
+    width: 60%;
+    height: 50%;
+    box-shadow: var(--shadow-img);
+}
+
+/* =========================================
+   PIE DE PÁGINA (FOOTER)
+   ========================================= */
+footer {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    text-align: center;
+}
+
+/* =========================================
+   FORMULARIOS
+   ========================================= */
+.formulario {
+    width: 60%;
+    margin: 50px auto;
+    padding: var(--spacing-md);
+}
+
+.formulario h2 {
+    margin-bottom: var(--spacing-lg);
+}
+
+form {
+    text-align: left;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px var(--spacing-lg);
+    margin: var(--spacing-xs) 0; 
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-md); 
+    background-color: var(--color-light);
+}
+
+/* Botones del formulario */
+.guardar, .cancelar {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px var(--spacing-lg);
+    margin: var(--spacing-xs) 0;
+    border: none;
+    border-radius: var(--border-radius-md);
+}
+
+.guardar {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    animation: latir 1.5s ease-in infinite;
+}
+
+.cancelar {
+    background-color: var(--color-tertiary);
+    color: var(--color-light);
+}
+
+.cancelar:hover {
+    background-color: var(--color-hover-btn);
+}
+
+/* =========================================
+   ANIMACIONES
+   ========================================= */
+@keyframes latir {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(10, 10, 10, 0.4);
+    }    
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 15px rgba(30, 144, 255, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgba(30, 144, 255, 0);
+    }
+}
+/* =========================================
+   MEDIA QUERIES (Responsive Design)
+   ========================================= */
+
+/* ----- TABLET (Pantallas de hasta 768px) ----- */
+@media (max-width: 768px) {
+    :root {
+        /* Redefinimos la variable más grande para achicar espacios generales */
+        --spacing-xl: 20px;
+    }
+
+    .titulocentro {
+        font-size: 32px;
+        /* Aplicamos variables: 20px arriba/abajo, 10px a los lados */
+        margin: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    section, .formulario {
+        width: 90%;
+    }
+
+    article img {
+        width: 80%;
+        height: auto; 
+    }
+}
+
+/* ----- CELULAR (Pantallas de hasta 480px) ----- */
+@media (max-width: 480px) {
+    :root {
+        /* Ajustamos las variables de espaciado desde la raíz para móviles */
+        --spacing-md: 10px;
+        --spacing-lg: 15px;
+        --spacing-xl: 15px;
+    }
+
+     /* Ocultar iconos de FontAwesome en los títulos h2 y el encabezado */
+    i[class*="fa-"] {
+        display: none;
+    }
+
+    .titulocentro {
+        font-size: 24px;
+        letter-spacing: 2px;
+        word-spacing: 4px;
+        /* Aplicamos variables: 15px arriba/abajo, 8px a los lados */
+        margin: var(--spacing-lg) var(--spacing-xs);
+    }
+
+    .titulosuperior {
+        letter-spacing: 2px;
+    }
+
+    .tituloinferior {
+        font-size: 16px;
+        text-align: center; 
+    }
+
+    /* Ajuste de los títulos de cada sección */
+    section h2 {
+        font-size: 20px; /* Más pequeño que los 24px del .titulocentro para mantener la jerarquía */
+        text-align: center; /* Centrarlo ayuda a equilibrar el diseño sin los iconos */
+        padding: var(--spacing-sm);
+    }
+
+    /* Ajuste de los párrafos para mejor lectura móvil */
+    section p {
+        font-size: 15px; /* Tamaño proporcional al .tituloinferior (16px) */
+        line-height: 1.6; /* Aumentar el interlineado evita que el texto se vea amontonado */
+        text-align: left; /* Evita los espacios en blanco gigantes que genera el 'justify' en celulares */
+        padding: 0 var(--spacing-sm);
+    }
+
+    section, .formulario {
+        width: 95%;
+        /* Aplicamos variables para el margen superior/inferior */
+        margin: var(--spacing-lg) auto;
+    }
+
+    section p {
+        /* Aplicamos variable de 10px para los costados */
+        padding: 0 var(--spacing-sm);
+    }
+
+    section ul {
+        /* Usamos calc() con variables para lograr los 30px (15px * 2) */
+        margin-left: calc(var(--spacing-xl) * 2);
+    }
+
+    article img {
+        width: 100%; 
+        /* Aplicamos variables de espaciado y color para una sombra más sutil */
+        box-shadow: var(--spacing-xs) var(--spacing-xs) 12px var(--color-text-main); 
+    }
+    
+    .guardar, .cancelar {
+        /* Aplicamos variables: 15px arriba/abajo, 20px a los lados */
+        padding: var(--spacing-lg) var(--spacing-xl); 
+    }
+}
