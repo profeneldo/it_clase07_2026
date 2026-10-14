@@ -116,3 +116,5 @@ Para conocer los medios disponibles, consultar la sección **Contacto** del siti
 ## 🎓 Propósito del proyecto
 
 Proyecto desarrollado con fines educativos y como parte del proceso de aprendizaje de la Materia **Tecnología de la Información**.
+
+## En este proyecto usamos IA para adaptar el contenido
