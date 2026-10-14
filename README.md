@@ -1,6 +1,6 @@
 # Clase 07
 
-Portafolio web personal desarrollado como proyecto del curso **Desarrollador Web Flex**.
+Portafolio web personal desarrollado como proyecto de la Materia **Tecnología de la Información**..
 
 ## 🌐 Sitio web
 
@@ -105,7 +105,7 @@ WebFlex_Clase_1_Entregable/
 
 **Neldo Croissant**
 
-Analista de Sistemas y docente. El sitio funciona como espacio personal para compartir intereses relacionados con programación, tecnología y proyectos de desarrollo.
+El sitio funciona como espacio personal para compartir intereses relacionados con programación, tecnología y proyectos de desarrollo.
 
 ## 📬 Contacto
 
