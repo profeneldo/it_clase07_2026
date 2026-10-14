@@ -1,22 +1,22 @@
-# Lucas' lair
+# Clase 07
 
 Portafolio web personal desarrollado como proyecto del curso **Desarrollador Web Flex**.
 
 ## 🌐 Sitio web
 
-**Sitio desplegado en Vercel:**
+**Sitio desplegado en Netlify:**
 
-https://lucaslair.vercel.app/
+https://itclase07-2026.netlify.app
 
 ## 📌 Descripción
 
-**Lucas' lair** es un sitio web personal orientado a compartir información sobre programación, tecnología y proyectos desarrollados de manera personal y colaborativa.
+**Clase 07** es un sitio web personal orientado a compartir información sobre programación, tecnología y proyectos desarrollados de manera personal y colaborativa.
 
 El sitio presenta información personal, una selección de proyectos y diferentes medios de contacto. Entre los proyectos presentados se encuentran **Ticketinhaber**, una plataforma para la gestión de tickets de soporte IT para dependencias de la administración pública municipal, y **Voterix**, una aplicación web para el control de votaciones en tiempo real. También se incluye una sección destinada a proyectos actualmente en desarrollo.
 
 ## 🎯 Objetivo
 
-El proyecto tiene como objetivo desarrollar progresivamente un sitio web personal aplicando los conocimientos adquiridos durante el curso de Desarrollo Web, incorporando buenas prácticas de HTML, CSS, diseño responsive, Bootstrap y preprocesamiento mediante Sass/SCSS.
+El proyecto tiene como objetivo desarrollar progresivamente un sitio web personal aplicando los conocimientos adquiridos durante el curso de Desarrollo Web, incorporando buenas prácticas de HTML, CSS, diseño responsive, utilizando la IA para mejorar el diseño.
 
 ## 🧩 Secciones del sitio
 
@@ -37,50 +37,6 @@ Utilizado para construir la estructura semántica y el contenido de las diferent
 ### CSS3
 
 El CSS utilizado por el sitio es el resultado de la compilación de los archivos SCSS.
-
-### Sass / SCSS
-
-La hoja de estilos fue desarrollada utilizando una arquitectura modular basada en **partials**, variables, mixins parametrizados, nesting, operadores y `@extend`.
-
-Los estilos reutilizables se organizan mediante variables, mixins y placeholders, evitando duplicación de código y manteniendo separadas las responsabilidades de cada módulo.
-
-La estructura principal es:
-
-```text
-scss/
-├── main.scss
-├── utilities/
-│   ├── _variables.scss
-│   └── _mixins.scss
-├── base/
-│   ├── _base.scss
-│   └── _tipografia.scss
-├── layout/
-│   ├── _header.scss
-│   ├── _nav.scss
-│   ├── _sections.scss
-│   └── _footer.scss
-└── components/
-    ├── _cards.scss
-    ├── _links.scss
-    ├── _lists.scss
-    ├── _media.scss
-    ├── _carrousel.scss
-    └── _accordion.scss
-```
-
-`main.scss` funciona como único punto de entrada y utiliza `@use` para organizar los distintos módulos.
-
-El resultado de la compilación se genera en:
-
-```text
-styles/
-└── style.css
-```
-
-### Bootstrap
-
-Se utiliza **Bootstrap 5** mediante CDN para determinados componentes y funcionalidades de la interfaz, integrándolo con los estilos propios del proyecto.
 
 ### Google Fonts
 
@@ -145,21 +101,9 @@ WebFlex_Clase_1_Entregable/
 └── README.md
 ```
 
-## ⚙️ Compilación de SCSS
-
-El proyecto utiliza Sass como dependencia de desarrollo.
-
-Para compilar la hoja de estilos desde el directorio raíz:
-
-```bash
-npx sass --no-source-map scss/main.scss styles/style.css
-```
-
-El archivo CSS generado es un **resultado de compilación** y no constituye la fuente principal de los estilos.
-
 ## 👤 Autor
 
-**Lucas Fabiani**
+**Neldo Croissant**
 
 Analista de Sistemas y docente. El sitio funciona como espacio personal para compartir intereses relacionados con programación, tecnología y proyectos de desarrollo.
 
@@ -171,4 +115,4 @@ Para conocer los medios disponibles, consultar la sección **Contacto** del siti
 
 ## 🎓 Propósito del proyecto
 
-Proyecto desarrollado con fines educativos y como parte del proceso de aprendizaje del curso **Desarrollador Web Flex**.
+Proyecto desarrollado con fines educativos y como parte del proceso de aprendizaje de la Materia **Tecnología de la Información**.
